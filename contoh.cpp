@@ -18,7 +18,7 @@ class PersegiPanjang{
 
  
 };
-    //Lingkaran ol; 
+    //Lingkaran ol;
 class Lingkaran{
     public:
         int jarijari;
@@ -41,5 +41,5 @@ int main(){
     cin >> objekPP.panjang;
     cout << "Masukkan Lebar : ";
     cin >> objekPP.lebar;
-    cout << "Luas Persegi Panjang : "<<objekPP.LuasPp(objekPP.panjang,objekPP.lebar) << endl;
+    cout << "Luas Persegi Panjang : " << objekPP.LuasPp(objekPP.panjang,objekPP.lebar) << endl;
 }
