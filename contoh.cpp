@@ -16,6 +16,20 @@ class PersgiPanjang{
         return a*b;
     }
 
-    //Lingkaran ol;
+ 
+};
+    //Lingkaran ol; 
+class Lingkaran{
+    public:
+        int jarijari;
     
+    void input(){
+        cout<< "Masukkan jari-jari : ";
+        cin>> jarijari;
+    }
+
+    int LuasLingkaran(int r){
+        return
+    }
+
 };
