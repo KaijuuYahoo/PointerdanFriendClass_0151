@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-class PersgiPanjang{
+class PersegiPanjang{
     public: //akses modifier
         int panjang,lebar;
     public:
@@ -29,7 +29,17 @@ class Lingkaran{
     }
 
     int LuasLingkaran(int r){
-        return
+        return 3.14*r*r;
     }
 
 };
+int main(){
+    PersegiPanjang objekPP;
+    Lingkaran ol;
+
+    cout << "Masukkan Panjang : ";
+    cin >> objekPP.panjang;
+    cout << "Masukkan Lebar : ";
+    cin >> objekPP.lebar;
+    cout << "Luas Persegi Panjang : "<<objekPP.LuasPp(objekPP.panjang,objekPP.lebar) << endl;
+}
