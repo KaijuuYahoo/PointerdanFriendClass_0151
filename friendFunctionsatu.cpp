@@ -1,18 +1,21 @@
 #include<iostream>
+#include<string>
 using namespace std;
 
 class mahasiswa {
-    public:
-        int nim;
-        void showNim(){
-            cout << "No Induk  = " << nim <<endl;
-        }
+    private:
+        string nama;
+    public :
+        friend void setNama(mahasiswa &a, string);
 };
 
-int main(){
-    mahasiswa *mhs = new mahasiswa{1}; //Pointer Object mhs
-    mhs -> nim = 2;
-    mhs -> showNim();
-    delete mhs;
-    return 0;
+void setNama(mahasiswa &a, string b){
+    a.nama = b;
+    cout << a.nama ;
+};
+
+int main (){
+    mahasiswa joko;
+    setNama(joko, "Kairi Kumar");
+    return 0
 }
